@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">smART</string>\
+    <string name="splash_welcome_txt">smART : \n HIV/AIDS Performance Predictor </string>
+    <string name="login_welcome_txt">Hello there !\nWelcome Back</string>
+    <string name="signup_welcome_txt">Hello there !\nWelcome to you</string>
+
+    <string name="login_fb_btn_label">"Login with Facebook"</string>
+    <string name="signup_fb_btn_label">"Signup with Facebook"</string>
+
+
+
+    <string name="item1_txt">Perfomance \nMeter</string>
+    <string name="item2_txt">WHO Stages</string>
+    <string name="item3_txt">Calculator</string>
+
+</resources>

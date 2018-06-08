@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerformanceActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="30dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingStart="15dp"
+            android:src="@drawable/ic_back" />
+        <TextView
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/layout_in_between_margins"
+            android:text="dashboard"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#644a62"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="36dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/FormSpace">
+                <TextView
+                   style="@style/FormText"
+                    android:text="Age (years) "/>
+                <EditText
+                    android:id="@+id/form_age"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+        </RelativeLayout>
+        <View
+            style="@style/Line"
+            />
+
+        <RelativeLayout
+            style="@style/FormSpace">
+            <TextView
+                style="@style/FormText"
+                android:text="Sex "/>
+            <Spinner
+                android:id="@+id/spinner_sex"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+        </RelativeLayout>
+        <View
+            style="@style/Line"
+            />
+
+        <RelativeLayout
+            style="@style/FormSpace">
+            <TextView
+                style="@style/FormText"
+                android:text="WHO Stage"/>
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+        </RelativeLayout>
+        <View
+            style="@style/Line"
+            />
+        <RelativeLayout
+            style="@style/FormSpace">
+            <TextView
+                style="@style/FormText"
+                android:text="CD4 Count"/>
+            <Spinner
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+        </RelativeLayout>
+        <View
+            style="@style/Line"
+            />
+        <RelativeLayout
+            style="@style/FormSpace">
+            <TextView
+                style="@style/FormText"
+                android:text="Weight (kg) "/>
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:inputType="number"
+                android:text=""
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <View
+            style="@style/Line"
+            />
+        <RelativeLayout
+            style="@style/FormSpace">
+            <TextView
+                style="@style/FormText"
+                android:text="Height (m) "/>
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:inputType="number"
+                android:text=""
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <View
+            style="@style/Line"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
